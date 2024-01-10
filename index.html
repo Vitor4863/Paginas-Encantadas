@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Menu Centralizado</title>
+  <style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700; /* Cor ao passar o mouse sobre o link */
+}
+
+/* Adapte o estilo conforme necessário para a versão responsiva */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="sua_logo.png" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="#">Categoria 1</a></li>
+          <li><a href="#">Categoria 2</a></li>
+          <li><a href="#">Categoria 3</a></li>
+          <li><a href="#">Categoria 4</a></li>
+          <!-- Adicione mais categorias conforme necessário -->
+        </ul>
+      </nav>
+    </header>
+  </div>
+</body>
+</html>
